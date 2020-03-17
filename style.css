@@ -1,16 +1,120 @@
-/* Type your code here */
-
-
-/* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+body{
+	
+    background-image: url('background-image1.png');
+    	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1600px;
+	width: 1200px;
+     
 }
+
+.orange{
+    
+	background-color: orangered;
+	
+	
+}
+header{
+
+ margin-left:90%;
+}
+h2{
+font-weight: 10;
+font-size: 6rem;
+}
+h4{
+	color: grey;
+	font-size: 4rem;
+}
+/* .batsman{
+	display: flex;
+	flex-direction: row;
+} */	
+
+table{
+	position: absolute;
+	font-size: 2rem;
+	font-weight: 10;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: black;
+	width: 1000px;
+	height: 1000px;
+	background-color: white;
+	
+}
+th,td{
+	
+	padding:10px;
+	border:solid 1px;
+	border-right: none;
+	border-left: none;
+	text-align: left;
+}
+table,td,th{
+	border-collapse: collapse;
+}
+.footer{
+    
+	margin-top: 100%;
+	margin-left: 80px;
+	}
+	
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #06D85F;
+  }
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+	.box{
+	  width: 70%;
+	}
+	.popup{
+	  width: 70%;
+	}
+  }
